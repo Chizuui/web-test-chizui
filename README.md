@@ -11,5 +11,9 @@ Contents Inside this file:
 
 
 ## login page
-just simple code with rgb gradient color
+Just simple code with rgb gradient color
 <img src="https://cdn.discordapp.com/attachments/785266066620284969/1094598816981860382/image.png">
+
+## Homepage
+Not Finished Yet
+<img src="https://cdn.discordapp.com/attachments/785266066620284969/1094599855692861440/image.png">
