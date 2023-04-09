@@ -8,3 +8,8 @@ Contents Inside this file:
 - login page
 - homepage (unfinished)
 - register page
+
+
+## login page
+just simple code with rgb gradient color
+<img src="https://cdn.discordapp.com/attachments/785266066620284969/1094598816981860382/image.png">
