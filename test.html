@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Signup</title>
+</head>
+<body>
+	<form>
+		<label for="input-text">Input teks:</label>
+		<input type="text" id="input-text" onkeypress="handleKeyPress(event)">
+		<button type="button" onclick="handleClick()">Klik saya</button>
+	  </form>
+	  
+	  <script>
+		function handleKeyPress(event) {
+		  if (event.keyCode === 13) {
+			// Tombol Enter ditekan
+			handleClick();
+		  }
+		}
+	  
+		function handleClick() {
+		  // Lakukan tindakan di sini
+		  console.log("Tombol diklik");
+		}
+	  </script>
+	  </body>
+</html>

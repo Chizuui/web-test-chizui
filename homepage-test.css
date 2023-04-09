@@ -1,0 +1,142 @@
+*, 
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background: #f86238;
+    padding: 10px;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow: hidden;
+    margin: 0;
+}
+
+.title {
+    float: left;
+    margin: 0;
+}
+
+.menu {
+    position: fixed;
+    background: rgb(255, 94, 0);
+    color: #232323;
+    height: 100%;
+    width: 200px;
+    top: 57px;
+    left: -300px;
+    -webkit-transition: left 0.2s;
+    transition: left 0.2s;
+    padding: 30px;
+    /* border: 0px solid #ccc; */
+}
+.menu ul{
+    padding: 0;
+}
+
+.menu li{
+    list-style-type: none;
+    padding: 10px 0px;
+}
+
+.menu a{
+    color: #232323;
+    text-decoration: none;
+    font-size: 10pt;
+}
+.button {
+    float: right;
+    background: orange;
+    padding: 10px;
+    color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: gray;
+    transition: .1s ease-in-out;
+    transition-delay: .1s;
+}
+
+.tampilan-slide-menu{
+    left: 0 !important;
+}
+
+.tulisan-center-1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.text-paragraf {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 3px;
+    }
+/* .footer-text{
+    text-decoration: none;
+    font-size: 20px;
+    color:white;
+    text-indent: 80px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.footer-text:hover {
+    background-color: tomato;
+    transition: .2s ease-in-out;
+    transition-delay: .1s;
+    border-radius: 1px;
+} Footer desca */
+/* .footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+} */
+/* .footer {
+  position: fixed;
+  left: 50;
+  bottom: 0;
+  height: 5vh;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} Footer Desca */ 
+
+.footer {
+    background-color: #f86238;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #f00;
+}
+
+.footer p {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+}

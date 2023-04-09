@@ -1,0 +1,241 @@
+*,
+html {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #eee;
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+a  {
+    text-decoration: none;
+}
+
+label {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 11pt;
+}
+
+a  {
+    text-decoration: none;
+}
+
+label {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 11pt;
+}
+
+.title-login {
+    color: lime;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 2px;
+    text-decoration: underline;
+}
+
+.card {
+    background-color: transparent;
+    border-radius: 8px;
+    box-shadow: 10px 10px 49px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 49px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 49px 0px rgba(0,0,0,0.75);
+    height: 500px;
+    margin: 6rem auto 8.1rem auto;
+    width: 500px;
+}
+.card-content {
+    padding: 10px 30px;
+}
+
+.card-title {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 3px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+}
+
+.underline-title {
+    background: #a6f77b;
+    height: 2px;
+    margin: 0.4rem auto 0 auto;
+    width: 89px;
+}
+
+.form-border {
+    background: #a6f77b;
+    height: 1px;
+    width: 100%;
+}
+
+/* .form-input{
+    width: calc(100% - 20px);
+    padding: 8px 10px;
+    margin-bottom: 15px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid #41d220;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+} */
+
+.form {
+    align-items: left;
+    display: flex;
+    flex-direction: right;
+}
+
+.login-button {
+    background: #55d610;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 1px 8px #55d610;
+    cursor: pointer;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 42px;
+    margin: 0 auto;
+    margin-top: 30px;
+    transition: 0.20s;
+    width: 153px;
+    justify-content: center;
+    align-items: center;
+}
+.login-button:hover {
+    box-shadow: 0px 1px 18px #9dd90f;
+    background-color: rgb(17, 104, 13);
+    transition: .2s ease-in-out;
+    transition-delay: .1s;
+}
+
+.login-button2 {
+    background: #55d610;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 1px 8px #55d610;
+    cursor: pointer;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 42px;
+    margin: 0 auto;
+    margin-top: 30px;
+    transition: 0.20s;
+    width: 153px;
+    align-content: right;
+    justify-content: right;
+    align-items: right;
+}
+.login-button2:hover {
+    box-shadow: 0px 1px 18px #9dd90f;
+    background-color: rgb(17, 104, 13);
+    transition: .2s ease-in-out;
+    transition-delay: .1s;
+}
+
+#signup {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 10pt;
+    margin-top: 16px;
+    text-align: center;
+}    
+
+.message {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #f00;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 14px;
+}
+
+button[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+    width: calc(100% - 20px);
+    padding: 8px 10px;
+    margin-bottom: 15px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid #41d220;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+.popup {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 999;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.popup.show {
+	visibility: visible;
+	opacity: 1;
+}
+
+.popup-content {
+	background-color: white;
+	padding: 20px;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.close-button {
+	background-color: #4CAF50;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-top: 20px;
+}
+
+.username {
+    color: white;
+}
+
+.password {
+    color: white;
+    text-decoration-color: white;
+}

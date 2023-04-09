@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css" />
+    <!-- <script src="login.js" type="text/javascript"></script> -->
+    <title>Login Page</title>
+</head>
+
+<body>
+    <div class="conainer"></div>
+    <div class="card">
+        <div class="card-content">
+            <div class="card-title">
+                <h2>DAFTAR</h2>
+                <div class="underline-title"></div>
+            </div>
+            <form id="login-form">
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" required>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+            <div class="message"></div>
+            <a href="http://127.0.0.1:5500/login%20page/login.html" class="signup"><b>Have Account? Log In</b></a>
+            </form>
+            
+            <div class="popup" id="success-popup">
+                <div class="popup-content">
+                    <p>Signup berhasil!</p>
+                    <button class="close-button">OK</button>
+                </div>
+            </div>
+
+            <div class="popup" id="alert-popup">
+                <div class="popup-content">
+                    <p>Anda Harus Memasukan Password Minimal 8 Karakter</p>
+                    <a href="signup.html">
+                    <button class="close-button">OK</button></a>
+                </div>
+            </div>
+
+            
+            <script>
+                const delayTime = 3000;
+
+                function redirect () {
+                    window.location.href = "http://127.0.0.1:5500/login%20page/login.html";
+                }
+                /*function handleKeyPress(event) {
+                    if (event.keyCode === 13) {
+                    // Tombol Enter ditekan
+                    handleClick();
+                    }
+                }
+
+                function handleClick() {
+                    // Lakukan tindakan di sini
+                    console.log("Tombol diklik");
+                } */
+                    document.getElementById("login-form").addEventListener("submit", function(event) {
+                    event.preventDefault();
+                    var fullname = document.getElementById("username").value;
+			        var email = document.getElementById("email").value;
+			        var password = document.getElementById("password").value;
+                    if (username === "" && password === "" && email === "") {
+                        // setTimeout(redirect, delayTime);
+                    // } else {
+                    //     document.getElementById("fail-popup").classList.add("show");
+                        document.getElementById("success-popup").classList.add("show");
+                        setTimeout(redirect, delayTime);
+                    }
+                    if (password.length < 8) {
+		                document.getElementById("alert-popup").classList.add("show");
+	                }
+                });
+            </script>        
+</body>
+</html>

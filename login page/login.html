@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css" />
+    <!-- <script src="login.js" type="text/javascript"></script> -->
+    <title>Login Page</title>
+</head>
+
+<body>
+    <div class="card">
+        <div class="card-content">
+            <div class="card-title">
+                <h2>LOGIN</h2>
+                <div class="underline-title"></div>
+            </div>
+            <form id="login-form">
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            <button type="submit">Login</button>
+            <div class="message"></div>
+            <a href="http://127.0.0.1:5500/login%20page/signup.html" id="signup"><b>Sign Up Now</b></a>
+            </form>
+            
+            <div class="popup" id="success-popup">
+                <div class="popup-content">
+                    <p>Login berhasil!</p>
+                    <button class="close-button">OK</button>
+                </div>
+            </div>
+
+            <div class="popup" id="fail-popup">
+                <div class="popup-content">
+                    <p>Password / username kamu salah!</p>
+                    <button class="close-button">OK</button>
+                </div>
+            </div>
+
+            
+            <script>
+                const delayTime = 3000;
+
+                function redirect () {
+                    window.location.href = "http://127.0.0.1:5500/homepage-test.html";
+                }
+                document.getElementById("login-form").addEventListener("submit", function(event) {
+                    event.preventDefault();
+                    var username = document.getElementById("username").value;
+                    var password = document.getElementById("password").value;
+                    if (username === "Chizui" && password === "admin123") {
+                        document.getElementById("success-popup").classList.add("show");
+                        setTimeout(redirect, delayTime);
+                    } else {
+                        document.getElementById("fail-popup").classList.add("show");
+                    }
+                });
+                document.querySelector("#success-popup .close-button").addEventListener("click", function() {
+			    document.getElementById("success-popup").classList.remove("show");
+		        });
+                document.querySelector("#fail-popup .close-button").addEventListener("click", function() {
+			    document.getElementById("fail-popup").classList.remove("show");
+		        });
+            </script>        
+</body>
+</html>
